@@ -19,6 +19,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
 // Basic convention that you must follow
 // routeName must be as specified in router.coffee file  
+// Eg for Route - this.route('products', {path: 'products/:pid'}), routeName will be 'products'
 'routeName': {
     title: 'Your title goes here',
     metaTags: [
@@ -35,7 +36,7 @@ export default Ember.Service.extend({
 });
 ```  
 
-### Examples
+## Examples
 
 #### _Usage inside routes_
 
@@ -119,3 +120,10 @@ export default Ember.Service.extend({
   },
 });
 ```
+
+## Demo Application
+We have hosted a [demo application](https://creative-karan.github.io/demo-seo-meta-tags/) where you can see this addon in action.
+
+## Further Reading
+* Read more about open graph [here](http://ogp.me/)
+* Read more about swift type [here](https://swiftype.com/documentation/meta_tags)

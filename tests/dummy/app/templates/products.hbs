@@ -1,0 +1,33 @@
+<div class="custom-row"><h1>{{heading}}</h1></div>
+<p class="paragraph-text">{{data}}</p>
+<div class="container">
+  <div class="card">
+      {{#link-to 'products' 1 class="p-one"}}
+        <div class="card-container product-one"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 1}}Sample Product 1(Macbook){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 2 class="p-two"}}
+        <div class="card-container product-two"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 2}}Sample Product 2(Iphone){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 3 class="p-three"}}
+        <div class="card-container product-three"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 3}}Sample Product 3(Playstation){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 4 class="p-four"}}
+        <div class="card-container product-four"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 4}}Sample Product 4(Uncharted){{/link-to}}</div>
+  </div>
+
+</div>
+{{outlet}}
