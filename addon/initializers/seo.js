@@ -1,6 +1,7 @@
+/*jshint esversion: 6 */
 import Ember from 'ember';
 
-export function initialize(container,app){};
+export function initialize(container,app){}
 
 var get, set;
 
@@ -21,13 +22,14 @@ Ember.Route.reopen({
     return this.parseTags(changedTags, false);
   }),
   setTitle: function(title) {
-    return window.document.title = title;
+    window.document.title = title;
+    return;
   },
   parseTags: function(tags, resetTags) {
     var that;
     that = this;
     if(!tags){
-      return
+      return;
     }
     return tags.forEach(function(tag) {
       var content, name;

@@ -1,6 +1,6 @@
 {
   "name": "ember-seo-meta-tags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This Ember-CLI addon is used to add/change meta-tags and title on different pages of your single page application and thus make your website SEO friendly.",
   "directories": {
     "doc": "doc",
@@ -11,17 +11,16 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/navyuginfo/ember-seo-meta-tags",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Karan Pathak",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
     "ember-cli": "1.13.0",
     "ember-cli-app-version": "0.4.0",
-    "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "^1.0.0",
     "ember-cli-htmlbars": "0.7.9",
     "ember-cli-htmlbars-inline-precompile": "^0.1.1",
@@ -30,19 +29,22 @@
     "ember-cli-qunit": "0.3.15",
     "ember-cli-release": "0.2.3",
     "ember-cli-uglify": "^1.0.1",
-    "ember-data": "1.13.5",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon", "ember-seo-meta-tags", "seo friendly", "meta tags", "dynamic title"
+    "ember-addon", "ember-seo-meta-tags", "seo", "meta", "tags", "dynamic", "title"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://creative-karan.github.io/demo-seo-meta-tags/",
+    "versionCompatibility": {
+      "ember": ">=1.13.3"
+    }
   }
 }

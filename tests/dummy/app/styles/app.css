@@ -1,0 +1,162 @@
+#meta_table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#meta_table td, #meta_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    max-width: 400px;
+    overflow-wrap: break-word;
+}
+
+#meta_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#meta_table tr:hover {background-color: #ddd;}
+
+#meta_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: linear-gradient(#333 0%,#444 100%);
+    color: white;
+}
+
+
+body{
+  margin: 0px;
+  font-family:  'Lato', sans-serif;
+}
+
+.header{
+  height: 19px;
+  color: white;
+  padding: 10px;
+  background: black;
+  text-align: center;
+}
+
+.about-link{
+  float: right;
+  border: 1px solid black;
+  padding: 6px 27px;
+  position: relative;
+  top: -6px;
+}
+
+.home-banner{
+  background-image: url('macbook_pro.jpeg');
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1330px) and (max-width: 1440px){
+  .home-banner{
+    background-position: 0px -573px;
+  }
+}
+
+.banner-heading{
+  font-size: 50px;
+  color: white;
+  bottom: 296px;
+  position: relative;
+  padding-left: 116px;
+}
+
+.overlay{
+  height:100%;
+  background: black;
+  opacity: 0.4;
+}
+
+.custom-row{
+  text-align: center;
+  margin:auto;
+}
+
+.card{
+  display: inline-block;
+  height: 217px;
+  width: 319px;
+  margin: 4% 5%;
+}
+
+.container{
+  margin: auto;
+  text-align: center;
+}
+
+.card-container{
+  display: inline-block;
+  border-radius: 3px;
+  height: 217px;
+  width: 319px;
+  box-shadow: rgba(0,0,0,.74902) 3px 3px 12px -4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:hover .card-container{
+  box-shadow: rgba(0,0,0,1.74902) 5px 5px 18px -4px;
+  transition: all 0.4s ease-out;
+}
+
+.card-container.product-one{
+  background-image: url('product_macbook.jpg');
+}
+
+.card-container.product-two{
+  background-image: url('product_iphone.jpeg');
+}
+
+.card-container.product-three{
+  background-image: url('product_playstation.jpeg');
+}
+
+.card-container.product-four{
+  background-image: url('product_uncharted.jpg');
+  background-position: center;
+}
+
+.p-text{
+  font-size: 19px;
+  padding-top: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container a{
+  color: #373535;
+}
+
+.container a:hover{
+  color:black;
+}
+
+.about-link a{
+  color: white;
+}
+
+.about-link:hover{
+  border: 1px solid white;
+  transition: all 0.6s ease-out;
+}
+
+.about-link.home{
+  float:left;
+}
+
+.paragraph-text{
+  font-size: 18px;
+  line-height: 32px;
+  width: 80%;
+  margin: auto;
+}

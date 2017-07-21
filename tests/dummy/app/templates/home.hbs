@@ -1,0 +1,33 @@
+<div class="custom-row"><h1>Sample Products</h1></div>
+<div class="custom-row"><h3> Navigate to other pages to see meta tags and title change</h3></div>
+<div class="container">
+  <div class="card">
+      {{#link-to 'products' 1}}
+        <div class="card-container product-one"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 1}}Sample Product 1(Macbook){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 2}}
+        <div class="card-container product-two"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 2}}Sample Product 2(Iphone){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 3}}
+        <div class="card-container product-three"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 3}}Sample Product 3(Playstation){{/link-to}}</div>
+  </div>
+
+  <div class="card">
+      {{#link-to 'products' 4}}
+        <div class="card-container product-four"></div>
+      {{/link-to}}
+    <div class="custom-row p-text">{{#link-to 'products' 4}}Sample Product 4(Uncharted){{/link-to}}</div>
+  </div>
+
+</div>
+{{outlet}}

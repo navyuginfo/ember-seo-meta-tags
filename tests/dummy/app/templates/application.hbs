@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<div class="header">
+  <span class="about-link home">{{#link-to 'home' class="back-home"}}Home{{/link-to}}</span>
+  Dummy App
+  <span class="about-link">{{#link-to 'about-us' class="about-us"}}About Us{{/link-to}}</span>
+</div>
+<div class="home-banner"><div class="overlay"></div><span class="banner-heading">Ember Seo Meta Tags</span></div>
 {{outlet}}
+
+<table id="meta_table">
+  <tr>
+    <th>Meta tag (Name or Property)</th>
+    <th>Content</th>
+  </tr>
+  {{#each meta_arr as |item|}}
+    <tr>
+      <td>{{item.key}}</td>
+      <td>{{item.value}}</td>
+    </tr>
+  {{/each}}
+</table>
