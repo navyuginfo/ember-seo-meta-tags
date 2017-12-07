@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 import Ember from 'ember';
 
-export function initialize(container,app){}
+export function initialize(app){}
 
 var get, set;
 
